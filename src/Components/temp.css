@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+/* https://source.unsplash.com/1600x900/?clouds */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.weather-app {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.card {
+    background-color: #000000d0;
+    color: white;
+    padding: 2rem;
+    border-radius: 49px;
+    width: 80vw;
+    max-width: 680px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 41px;
+    width: 42px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    width: 78%;
+    font-size: 100%;
+}
+
+.weather {
+    margin-top: 10px;
+}
+
+.city {
+    font-size: 2.2rem;
+    margin-left: 18px;
+    margin-top: 30px;
+}
+
+.temp {
+    margin: 24px 18px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.bottom {
+    margin: 24px 18px;
+    font-size: 1.3rem;
+}
+
+.humidity {
+    padding-top: 7px;
+}
+
+.wind {
+    padding-top: 7px;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background: url(../img/bg.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card {
+        width: 92%;
+        height: auto;
+    }
+
+    .temp {
+        margin: 28px 18px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        background: url(../img/bg.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card {
+        width: 350px;
+        height: auto;
+    }
+
+    .city {
+        font-size: 2.6rem;
+    }
+
+    .temp {
+        margin: 28px 18px;
+        font-size: 2.2rem;
+    }
+
+    .bottom {
+        font-size: 1.3rem;
+    }
+}
